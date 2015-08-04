@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Bootstrap 3 Options</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#myPopover").popover({
+        title : 'Default title value'
+    });
+});
+</script>
+<style type="text/css">
+	.bs-example{
+    	margin: 50px;
+    }
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <button type="button" class="btn btn-primary btn-lg" id="myPopover" data-toggle="popover" data-content="And here's some amazing content. It's very engaging.">Popover Example</button>    
+</div>
+</body>
+</html>                                		

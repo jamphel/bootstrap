@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Bootstrap 3 Popover Methods</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".show-popover").click(function(){
+   		$("#myPopover").popover('show');
+    });
+    $(".hide-popover").click(function(){
+   		$("#myPopover").popover('hide');
+    });
+    $(".toggle-popover").click(function(){
+   		$("#myPopover").popover('toggle');
+    });
+    $(".destroy-popover").click(function(){
+   		$("#myPopover").popover('destroy');
+    });
+});
+</script>
+<style type="text/css">
+	.bs-example{
+    	margin: 100px 50px;
+    }
+	.popover-examples{
+		margin-bottom: 60px;
+	}
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <div class="popover-examples">
+        <button type="button" title="Popover title" class="btn btn-primary btn-lg" id="myPopover" data-toggle="popover" data-content="And here's some amazing content. It's very engaging.">Popover Example</button>
+    </div>
+    <div class="popover-controls">
+        <p>Click on the following buttons to control the popover manually.</p>
+    	<input type="button" class="btn btn-info show-popover" value="Show">
+        <input type="button" class="btn btn-warning hide-popover" value="Hide">
+        <input type="button" class="btn btn-success toggle-popover" value="Toogle">
+        <input type="button" class="btn btn-danger destroy-popover" value="Destroy">
+    </div>    
+</div>
+</body>
+</html>                                		
